@@ -419,6 +419,138 @@ section{padding:clamp(3.5rem,8vw,6rem) 0}
 <!-- ========================= TRANSPORT MARFA ======================= -->
 
 <!-- ========================= TRANSPORT MARFĂ ========================= -->
+
+     
+<style>
+/* ===== TRANSPORT MARFA - BACKGROUND ===== */
+
+#transport-marfa {
+  position: relative;
+  isolation: isolate;
+  padding: 100px 0;
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(5, 12, 25, 0.88),
+      rgba(5, 12, 25, 0.65)
+    ),
+    url("images/frigorific-background.webp");
+
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Continut */
+#transport-marfa .wrap {
+  position: relative;
+  z-index: 2;
+}
+
+/* Titlu */
+#transport-marfa .sec-head h2 {
+  color: #fff;
+  text-shadow: 0 2px 12px rgba(0,0,0,.4);
+}
+
+/* Descriere */
+#transport-marfa .sec-head p {
+  color: rgba(255,255,255,.9);
+  line-height: 1.8;
+}
+
+/* Carduri */
+#transport-marfa .card {
+  background: rgba(10, 20, 35, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 20px;
+  padding: 35px;
+  color: #fff;
+  transition: transform .3s ease,
+              background .3s ease,
+              border-color .3s ease;
+}
+
+/* Hover */
+#transport-marfa .card:hover {
+  transform: translateY(-6px);
+  background: rgba(10, 20, 35, 0.78);
+  border-color: rgba(255,255,255,.35);
+}
+
+/* Text carduri */
+#transport-marfa .card h3 {
+  color: #fff;
+}
+
+#transport-marfa .card p {
+  color: rgba(255,255,255,.85);
+  line-height: 1.7;
+}
+
+/* Iconite */
+#transport-marfa .ico svg {
+  fill: #fff;
+}
+
+/* ===== TABLETA ===== */
+@media (max-width: 991px) {
+  #transport-marfa {
+    padding: 75px 0;
+    background-position: center center;
+  }
+
+  #transport-marfa .card {
+    padding: 28px;
+  }
+}
+
+/* ===== TELEFON ===== */
+@media (max-width: 767px) {
+  #transport-marfa {
+    padding: 65px 0;
+    background-position: 60% center;
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(5,12,25,.85),
+        rgba(5,12,25,.72)
+      ),
+      url("images/frigorific-background.webp");
+  }
+
+  #transport-marfa .grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  #transport-marfa .sec-head h2 {
+    font-size: clamp(26px, 7vw, 36px);
+    line-height: 1.2;
+  }
+
+  #transport-marfa .sec-head p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  #transport-marfa .card {
+    padding: 25px 22px;
+    border-radius: 16px;
+  }
+
+  #transport-marfa .card:hover {
+    transform: none;
+  }
+}
+</style>
+
+     
 <section id="transport-marfa">
   <div class="wrap">
     <div class="sec-head reveal">
@@ -599,7 +731,7 @@ section{padding:clamp(3.5rem,8vw,6rem) 0}
 </div>
 
     <!-- ✏️ Imagine: images/despre.jpg -->
-    <img class="about__img reveal" src="despre-noi.png" alt="Echipa YoyoTravel lângă microbuz" loading="lazy" width="800" height="600">
+    <img class="about__img reveal" src="despre-noi.png" alt="Echipa YoyoTravel lângă microbuz" loading="lazy" width="800" height="auto">
   </div>
 </section>
 
